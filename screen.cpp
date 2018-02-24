@@ -8,9 +8,10 @@ int main( )
    float b = 68.123; 
    char c = 'J';
  
-   cout<<a<<" "<<b<<" "<<c;//display data to console (i.e. as formatted chars)
+	// Display data to console as formatted characters.
+	cout<< a << " " << b << " " << c;
 
-   cout<<endl<<endl;
+	cout << endl << endl;
  
    return 0;
 }
