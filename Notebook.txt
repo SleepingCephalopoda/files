@@ -46,3 +46,8 @@ $4 = 1
 0xbfffef49:	0x4a	0xb6	0xe5	0xfa
 (gdb) 
 
+Text Files
+
+hexdump -ve '/1 "%02x "' abc.txt ; echo
+2d 36 37 33 30 20 36 38 2e 31 32 33 20 4a 
+
