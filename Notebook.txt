@@ -1,0 +1,48 @@
+What is in Memory (RAM)
+
+GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.5) 7.11.1
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "i686-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./screen.out...done.
+(gdb) b 11
+Breakpoint 1 at 0x8048790: file screen.cpp, line 11.
+(gdb) r
+Starting program: /home/student/Repositories/files/screen.out 
+
+Breakpoint 1, main () at screen.cpp:12
+12		cout<< a << " " << b << " " << c;
+(gdb) p a
+$1 = -6730
+(gdb) x/2bt &a
+0xbfffef4a:	10110110	11100101
+(gdb) x/2xb &a
+0xbfffef4a:	0xb6	0xe5
+(gdb) p sizeof(a)
+$2 = 2
+(gdb) p sizeof(b)
+$3 = 4
+(gdb) x/4bt &b
+0xbfffef4c:	11111010	00111110	10001000	01000010
+(gdb) x/4xb &b
+0xbfffef4c:	0xfa	0x3e	0x88	0x42
+(gdb) p sizeof(c)
+$4 = 1
+(gdb) x/4bt &c
+0xbfffef49:	01001010	10110110	11100101	11111010
+(gdb) x/4bt &c
+0xbfffef49:	01001010	10110110	11100101	11111010
+(gdb) x/4xb &c
+0xbfffef49:	0x4a	0xb6	0xe5	0xfa
+(gdb) 
+
