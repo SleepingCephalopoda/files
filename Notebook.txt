@@ -51,3 +51,8 @@ Text Files
 hexdump -ve '/1 "%02x "' abc.txt ; echo
 2d 36 37 33 30 20 36 38 2e 31 32 33 20 4a 
 
+Binary File
+
+hexdump -ve '/1 "%02x "' abc.bin ; echo
+b6 e5 fa 3e 88 42 4a 
+
